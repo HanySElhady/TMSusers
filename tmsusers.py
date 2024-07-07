@@ -26,10 +26,14 @@ st.markdown('<style>div.block-container{padding-top:3rem;}</style>', unsafe_allo
 
 
 # تحميل البيانات
-data = pd.read_excel('TMS_users.xlsx')
+data = pd.read_excel('TMS_users.xlsx', engine='openpyxl')
+
+# تحويل كود الموظف إلى أرقام صحيحة
+data['كود الموظف'] = pd.to_numeric(data['كود الموظف'], errors='coerce').astype('Int64')
 
 # Filter DataFrame based on selected date range
 col1, col2 = st.columns((2, 2))
+
 # إجمالي عدد المستخدمين
 total_users = len(data)
 st.write(f"### إجمالي عدد المستخدمين: {total_users}")
