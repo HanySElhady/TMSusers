@@ -29,7 +29,7 @@ st.markdown('<style>div.block-container{padding-top:3rem;}</style>', unsafe_allo
 data = pd.read_excel('TMS_users.xlsx', engine='openpyxl')
 
 # تحويل كود الموظف إلى أرقام صحيحة
-data['كود الموظف'] = pd.to_numeric(data['كود الموظف'].str.replace(',', ''), errors='coerce').astype('int64')
+#data['كود الموظف'] = pd.to_numeric(data['كود الموظف'].str.replace(',', ''), errors='coerce').astype('int64')
 
 # Filter DataFrame based on selected date range
 col1, col2 = st.columns((2, 2))
