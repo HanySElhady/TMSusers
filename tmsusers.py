@@ -1,12 +1,8 @@
 import streamlit as st
 import pandas as pd
-import warnings
-import os
-import sys
-import base64  # Import base64 module
-from io import BytesIO
 import plotly.express as px
-warnings.filterwarnings('ignore')
+
+
 st.set_page_config(page_title="TEMSCO",page_icon=":factory:",layout="wide")
 header = st.container()
 header.image('logo.png', width=100) 
