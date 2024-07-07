@@ -22,7 +22,7 @@ st.markdown("""
 with header:
     st.markdown("<h1 class='title'> التمساح الدولية للتصنيع والتجارة - تمسكو </h1>", unsafe_allow_html=True)
 
-st.markdown('<style>div.block-container{padding-top:3rem;}</style>', unsafe_allow_html=True)
+st.markdown('<style>div.block-container{padding-top:4rem;}</style>', unsafe_allow_html=True)
 
 
 # تحميل البيانات
