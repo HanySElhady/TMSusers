@@ -1,7 +1,10 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-
+import os
+import sys
+import base64  # Import base64 module
+from io import BytesIO
 
 st.set_page_config(page_title="TEMSCO",page_icon=":factory:",layout="wide")
 header = st.container()
